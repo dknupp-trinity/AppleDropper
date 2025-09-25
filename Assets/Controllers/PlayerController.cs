@@ -7,7 +7,7 @@ public class PlayerController : MonoBehaviour
     public float rightBoundary;
     public float leftBoundary;
     private float halfWidth;
-    
+
     // Start is called once before the first execution of Update after the MonoBehaviour is created
     void Start()
     {
@@ -20,11 +20,16 @@ public class PlayerController : MonoBehaviour
         float camRight = Camera.main.transform.position.x + horzExtent;
 
         // Sprite half-width
-        halfWidth = GetComponent<SpriteRenderer>().bounds.extents.x;
+        if (GetComponent<SpriteRenderer>() != null)
+            halfWidth = GetComponent<SpriteRenderer>().bounds.extents.x;
+        else
+            halfWidth = 0.5f; // default if no sprite renderer
 
         // Adjusted edges
         leftBoundary = camLeft + halfWidth;
         rightBoundary = camRight - halfWidth;
+        //leftBoundary = -5 + halfWidth;
+        //rightBoundary = 5 - halfWidth;
     }
 
     // Update is called once per frame

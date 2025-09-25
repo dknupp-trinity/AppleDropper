@@ -44,8 +44,8 @@ PlayerSettings:
   m_HolographicTrackingLossScreen: {fileID: 0}
   defaultScreenWidth: 1920
   defaultScreenHeight: 1080
-  defaultScreenWidthWeb: 960
-  defaultScreenHeightWeb: 600
+  defaultScreenWidthWeb: 1000
+  defaultScreenHeightWeb: 1000
   m_StereoRenderingPath: 0
   m_ActiveColorSpace: 1
   unsupportedMSAAFallback: 0
@@ -684,10 +684,10 @@ PlayerSettings:
   captureStartupLogs: {}
   activeInputHandler: 2
   windowsGamepadBackendHint: 0
-  cloudProjectId: 0192de1b-8cf4-4190-b1d9-485ebd3d7fee
+  cloudProjectId: 9cfa8e34-de48-4b92-8f25-804e63bcad26
   framebufferDepthMemorylessMode: 0
   qualitySettingsNames: []
-  projectName: AppleDropper
+  projectName: AppleDropperParticles
   organizationId: dknupptrinity
   cloudEnabled: 0
   legacyClampBlendShapeWeights: 0

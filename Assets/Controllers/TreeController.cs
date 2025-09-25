@@ -7,7 +7,8 @@ public class TreeController : MonoBehaviour
     public float rightBoundary;
     public float leftBoundary;
     public int direction = 1; // 1 for right, -1 for left
-    
+
+    private float halfWidth;
     
     
     //Fruit Dropping
@@ -43,7 +44,10 @@ public class TreeController : MonoBehaviour
         float camRight = Camera.main.transform.position.x + horzExtent;
 
         // Get sprite half-width in world units
-        float halfWidth = GetComponent<SpriteRenderer>().bounds.extents.x;
+        if (GetComponent<SpriteRenderer>() != null)
+            halfWidth = GetComponent<SpriteRenderer>().bounds.extents.x;
+        else
+            halfWidth = 0.5f; // default if no sprite renderer
 
         // Adjust edges so sprite never goes off-screen
         leftBoundary = camLeft + halfWidth;

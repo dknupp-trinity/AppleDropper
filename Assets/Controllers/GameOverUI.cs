@@ -36,15 +36,46 @@ public class GameOverUI : MonoBehaviour
     }
 
     // Called by the UI Restart button
-    public void Restart()
+    public void RestartMainScene()
     {
         Hide();
 
-        int sceneIndex = SceneManager.GetActiveScene().buildIndex;
+        //int sceneIndex = SceneManager.GetActiveScene().buildIndex;
+        int sceneIndex = 0; // Main game scene index
 
         // Resume time so scene reload isn't paused
         Time.timeScale = 1f;
 
+        SceneManager.LoadScene(sceneIndex);
+    }
+    
+    public void RestartParticleScene()
+    {
+        Hide();
+
+        //int sceneIndex = SceneManager.GetActiveScene().buildIndex;
+        int sceneIndex = 1; // Particle version index
+
+        // Resume time so scene reload isn't paused
+        Time.timeScale = 1f;
+
+        SceneManager.LoadScene(sceneIndex);
+    }
+
+    // Called by another UI button to load a different scene by name
+    public void LoadSceneByName(string sceneName)
+    {
+        if (string.IsNullOrEmpty(sceneName)) return;
+        Hide();
+        Time.timeScale = 1f;
+        SceneManager.LoadScene(sceneName);
+    }
+
+    // Convenience: load by build index
+    public void LoadSceneByIndex(int sceneIndex)
+    {
+        Hide();
+        Time.timeScale = 1f;
         SceneManager.LoadScene(sceneIndex);
     }
 
