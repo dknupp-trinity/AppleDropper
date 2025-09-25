@@ -14868,7 +14868,7 @@ GameObject:
   - component: {fileID: 819551424}
   - component: {fileID: 819551423}
   m_Layer: 0
-  m_Name: Trunk
+  m_Name: TrunkEmitter
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -29574,23 +29574,39 @@ PrefabInstance:
     m_Modifications:
     - target: {fileID: 536161238216275151, guid: ab4aaa13da50b734bbc817ed0895e128, type: 3}
       propertyPath: m_IsActive
-      value: 0
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 1120652329075380794, guid: ab4aaa13da50b734bbc817ed0895e128, type: 3}
       propertyPath: m_AnchoredPosition.x
-      value: -147.6
+      value: -76.3
       objectReference: {fileID: 0}
     - target: {fileID: 1120652329075380794, guid: ab4aaa13da50b734bbc817ed0895e128, type: 3}
       propertyPath: m_AnchoredPosition.y
-      value: 69.6
+      value: 68.8
       objectReference: {fileID: 0}
     - target: {fileID: 1878695935010322722, guid: ab4aaa13da50b734bbc817ed0895e128, type: 3}
       propertyPath: m_IsActive
       value: 1
       objectReference: {fileID: 0}
+    - target: {fileID: 2436044791576249214, guid: ab4aaa13da50b734bbc817ed0895e128, type: 3}
+      propertyPath: m_AnchoredPosition.x
+      value: 320.74997
+      objectReference: {fileID: 0}
+    - target: {fileID: 2436044791576249214, guid: ab4aaa13da50b734bbc817ed0895e128, type: 3}
+      propertyPath: m_AnchoredPosition.y
+      value: 64.30002
+      objectReference: {fileID: 0}
     - target: {fileID: 2500692792672643432, guid: ab4aaa13da50b734bbc817ed0895e128, type: 3}
       propertyPath: m_IsActive
-      value: 0
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 3072669745265773079, guid: ab4aaa13da50b734bbc817ed0895e128, type: 3}
+      propertyPath: m_AnchoredPosition.x
+      value: 81.34538
+      objectReference: {fileID: 0}
+    - target: {fileID: 3072669745265773079, guid: ab4aaa13da50b734bbc817ed0895e128, type: 3}
+      propertyPath: m_AnchoredPosition.y
+      value: 68.3
       objectReference: {fileID: 0}
     - target: {fileID: 3203846121363548822, guid: ab4aaa13da50b734bbc817ed0895e128, type: 3}
       propertyPath: m_Name
@@ -29602,7 +29618,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 3952311139793700801, guid: ab4aaa13da50b734bbc817ed0895e128, type: 3}
       propertyPath: m_IsActive
-      value: 0
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 4338447047902208210, guid: ab4aaa13da50b734bbc817ed0895e128, type: 3}
       propertyPath: m_Pivot.x
@@ -29704,17 +29720,33 @@ PrefabInstance:
       propertyPath: m_IsActive
       value: 1
       objectReference: {fileID: 0}
+    - target: {fileID: 7278915952783870765, guid: ab4aaa13da50b734bbc817ed0895e128, type: 3}
+      propertyPath: m_AnchoredPosition.x
+      value: -276.6
+      objectReference: {fileID: 0}
+    - target: {fileID: 7278915952783870765, guid: ab4aaa13da50b734bbc817ed0895e128, type: 3}
+      propertyPath: m_AnchoredPosition.y
+      value: 64.3
+      objectReference: {fileID: 0}
     - target: {fileID: 7635066780112205588, guid: ab4aaa13da50b734bbc817ed0895e128, type: 3}
       propertyPath: m_AnchoredPosition.x
-      value: -125.09999
+      value: -53.79998
       objectReference: {fileID: 0}
     - target: {fileID: 7635066780112205588, guid: ab4aaa13da50b734bbc817ed0895e128, type: 3}
       propertyPath: m_AnchoredPosition.y
-      value: 48.299988
+      value: 47.499977
+      objectReference: {fileID: 0}
+    - target: {fileID: 7766067027526294779, guid: ab4aaa13da50b734bbc817ed0895e128, type: 3}
+      propertyPath: m_AnchoredPosition.x
+      value: 81.34538
+      objectReference: {fileID: 0}
+    - target: {fileID: 7766067027526294779, guid: ab4aaa13da50b734bbc817ed0895e128, type: 3}
+      propertyPath: m_AnchoredPosition.y
+      value: 48.300003
       objectReference: {fileID: 0}
     - target: {fileID: 8343100844903785679, guid: ab4aaa13da50b734bbc817ed0895e128, type: 3}
       propertyPath: m_IsActive
-      value: 0
+      value: 1
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
@@ -34709,7 +34741,7 @@ GameObject:
   - component: {fileID: 1992536434}
   - component: {fileID: 1992536433}
   m_Layer: 0
-  m_Name: Leaves
+  m_Name: LeafEmitter
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -39544,8 +39576,9 @@ GameObject:
   - component: {fileID: 2033557338}
   - component: {fileID: 2033557340}
   - component: {fileID: 2033557339}
+  - component: {fileID: 2033557341}
   m_Layer: 0
-  m_Name: Apples
+  m_Name: AppleEmitter
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -39782,7 +39815,7 @@ ParticleSystem:
     startSpeed:
       serializedVersion: 2
       minMaxState: 0
-      scalar: 5
+      scalar: 0
       minScalar: 5
       maxCurve:
         serializedVersion: 2
@@ -40224,7 +40257,7 @@ ParticleSystem:
     gravityModifier:
       serializedVersion: 2
       minMaxState: 0
-      scalar: 0
+      scalar: 1
       minScalar: 0
       maxCurve:
         serializedVersion: 2
@@ -44371,6 +44404,18 @@ ParticleSystem:
         m_PostInfinity: 2
         m_RotationOrder: 4
     vectorLabel1_3: W
+--- !u!114 &2033557341
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2033557337}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 60dde8983f9a1084294eb4a32380d8b6, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::AppleParticleController
 --- !u!1660057539 &9223372036854775807
 SceneRoots:
   m_ObjectHideFlags: 0
